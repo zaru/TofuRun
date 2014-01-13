@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "cocos-ext.h"
 #include "AppMacros.h"
+#include "GameLayerLoader.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -51,6 +52,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
     
     CCNodeLoaderLibrary* ccNodeLoaderLibrary = CCNodeLoaderLibrary::newDefaultCCNodeLoaderLibrary();
+    ccNodeLoaderLibrary->registerCCNodeLoader("GameLayer", GameLayerLoader::loader());
     CCBReader* ccbReader = new CCBReader(ccNodeLoaderLibrary);
     CCNode* node = ccbReader->readNodeGraphFromFile("Sample.ccbi");
     
