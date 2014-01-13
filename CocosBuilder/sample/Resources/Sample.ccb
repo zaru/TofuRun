@@ -32,9 +32,9 @@
 				<key>displayName</key>
 				<string>bg1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>mBg1</string>
 				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -104,9 +104,9 @@
 				<key>displayName</key>
 				<string>bg2</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>mBg2</string>
 				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -176,9 +176,9 @@
 				<key>displayName</key>
 				<string>bg3</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>mBg3</string>
 				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -288,6 +288,14 @@
 							<false/>
 							<integer>0</integer>
 						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>tag</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>1</integer>
 					</dict>
 					<dict>
 						<key>name</key>
