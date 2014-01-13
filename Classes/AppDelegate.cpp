@@ -55,6 +55,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     ccNodeLoaderLibrary->registerCCNodeLoader("GameLayer", GameLayerLoader::loader());
     CCBReader* ccbReader = new CCBReader(ccNodeLoaderLibrary);
     CCNode* node = ccbReader->readNodeGraphFromFile("Sample.ccbi");
+    ((GameLayer*)node)->setAnimationManager((ccbReader->getAnimationManager()));
     
     CCScene *pScene = CCScene::create();
     if (node != NULL) {
